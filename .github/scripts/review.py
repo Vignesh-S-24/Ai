@@ -1,7 +1,5 @@
 import os
-
 import subprocess
-
 import requests
  
 # Get the OpenRouter API key from environment variables
