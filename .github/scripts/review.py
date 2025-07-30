@@ -2,8 +2,6 @@ import os
 import subprocess
 import requests
  
-# Get the OpenRouter API key from environment variables
-
 api_key = os.getenv("OPENROUTER_API_KEY")
  
 # Git diff to show what changed in the pull request
