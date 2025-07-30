@@ -1,7 +1,5 @@
 import os
 
-import openai
-
 import subprocess
 
 import requests
