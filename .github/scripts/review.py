@@ -4,10 +4,13 @@ import requests
  
 api_key = os.getenv("OPENROUTER_API_KEY")
  
-# Git diff to show what changed in the pull request
+api_key = os.getenv("OPENROUTER_API_KEY")
 
+# Ensure base branch exists
+subprocess.run(["git", "fetch", "origin", "main"], check=True)
+
+# Generate the diff
 diff_command = ["git", "diff", "origin/main...HEAD"]
-
 diff_output = subprocess.check_output(diff_command).decode("utf-8")
  
 # Prepare prompt for the AI
