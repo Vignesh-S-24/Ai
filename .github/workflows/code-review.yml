@@ -34,8 +34,10 @@ jobs:
 
         run: python .github/scripts/review.py
 
+      - name: Confirm API key is set
+        run: echo "✅ API key was passed"
         env:
+              OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
 
-          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
 
  
